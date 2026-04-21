@@ -12,7 +12,7 @@ func add(a int, b int) int {
 	return a + b
 }
 
-func main() {
+func main2() {
 	fmt.Println(greet("Alice"))
 	fmt.Println("Sum:", add(5, 7))
 }

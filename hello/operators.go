@@ -59,10 +59,10 @@ func AssignmentOperators() (int, int, int, int, int, int) {
 	return c, c, c, c, c, c
 }
 
-func MiscOperators() (int, int) {
-	// address operator
-	addr := &a
-	// dereference operator
-	val := *addr
-	return addr, val
-}	
+// func MiscOperators() (int, int) {
+// 	// address operator
+// 	addr := &a
+// 	// dereference operator
+// 	val := *addr
+// 	return addr, val
+// }

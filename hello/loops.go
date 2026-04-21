@@ -4,7 +4,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main3() {
 	// for loop
 	for i := 1; i <= 5; i++ {
 		fmt.Println("For Loop Iteration:", i)
@@ -32,7 +32,7 @@ func main() {
 	for index, value := range numbers {
 		fmt.Printf("Index: %d, Value: %d\n", index, value)
 	}
-	
+
 }
 
 func sumOfFirstN(n int) int {
@@ -66,4 +66,4 @@ func loopWithContinue() {
 		}
 		fmt.Println("Odd Number:", i)
 	}
-}	
+}
