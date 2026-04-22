@@ -10,13 +10,16 @@ import (
 )
 
 func main() {
-	app := fiber.New(fiber.Config{AppName: "go-crud-fiber"})
+	app := fiber.New(fiber.Config{
+		AppName:      "go-crud-fiber",
+		ErrorHandler: platform.ErrorHandler,
+	})
 
-	// 1. Connect to the database (e.g., PostgreSQL, MySQL)
+	// 1. Connect to the database
 	db := platform.InitDB()
 
-	// 2. Migrate the database schema (optional, but recommended)
-	db.AutoMigrate(&user.RegisterUserDTO{}) // Uncomment when you have a User model
+	// 2. Migrate the database schema
+	db.AutoMigrate(&user.User{})
 
 	// 3. Load Routes
 	routes.SetupRoutes(app, db)
